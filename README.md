@@ -10,3 +10,6 @@ The add to cart button changes once the particular item is added to the cart and
 
 Designed this responsive multi-device page using JavaScript , HTML, and styled using CSS. 
 
+![Product-List-Cart](https://github.com/user-attachments/assets/0829f91a-c2b1-4cf8-8a04-fe8d136721e5)
+
+ [Live Site] (https://vermillion-cendol-4ef1a0.netlify.app)
