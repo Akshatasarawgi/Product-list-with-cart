@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: var(--rose-50);
+    color: var(--rose-900);
+}
+
+main {
+    position: relative;
+    display: flex;
+    padding: 2%;
+    margin: 3%;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.Desserts {
+    margin: 1%;
+    padding: 1%;
+}
+
+.products-list {
+    width: 60vw;
+    margin: 2% 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5%;
+}
+
+.products-list h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1% 0;
+}
+
+.product {
+    margin: 2% 0;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--red);
+    margin-bottom: 2%;
+}
+
+figure {
+    margin-bottom: 2%;
+}
+
+.caption {
+    color: var(--rose-500);
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-top: 2%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+.product-image.desktop{
+    width: 18vw;
+    border-radius: 5px;
+    display: block;
+  }
+  
+ .product-image.mobile {
+    display: none;
+ } 
+
+.add-to-cart {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 0.8rem;
+    background-color: white;
+    color : var(--rose-900);
+    border: 1px solid hsl(14, 65%, 9%);
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-width:  123px;
+    max-width: 123px;
+  }
+
+  .add-to-cart:hover {
+    color: var(--red);
+    border: 1px solid var(--red);
+  }
+
+
+.cart {
+    margin: 1%;
+    padding: 1%;
+    background-color: white ;
+    width: 45vw;
+    height: max-content;
+    border-radius: 3%;
+}
+
+.cart-heading {
+    color: var(--red);
+    margin: 3% 0;
+}
+
+.item-added1 {
+    border-bottom: 1px solid var(--rose-100);
+    padding: 5% 0;
+} 
+
+.remove-item img {
+    border: 1px solid var(--rose-300);
+    border-radius: 50%;
+    padding: 10%;
+    transition: filter 0.3s ease;
+}
+
+.remove-item img:hover{
+    filter: brightness(0) saturate(100%) invert(19%) sepia(100%) saturate(478%) hue-rotate(330deg) brightness(96%) contrast(96%);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.item-added1 > h5 {
+    color: var(--rose-900);
+    opacity: 0.85;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item-added .item-info {
+    display: flex;
+   justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    color: var(--rose-500);
+}
+
+.item-quantity {
+    display: flex;
+    justify-content: start;
+    gap: 0.5em;
+}
+
+.quantity {
+    color : var(--red);
+    margin-right: 0.6rem;
+    font-weight: 600;
+}
+
+.price-per-item {
+    font-weight: 200;
+    color: var(--rose-500);
+    margin-right: 5%;
+   
+}
+
+.total-per-price {
+    font-weight: 600;
+    color : var(--rose-500);
+}
+
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.order-total h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cart-footer {
+    background-color: var(--rose-50);
+    border-radius: 5px;
+    margin: 5% 0;
+    padding: 4% 3% 4% 8%;
+
+}
+
+.cart-footer img {
+    vertical-align: middle;
+    margin-right: 2%;
+}
+
+.cart-footer span {
+    font-weight: 600;
+}
+
+.confirm-order-btn {
+    margin: auto;
+    display: block;
+    padding: 5% 30%;
+    border-radius: 22px;
+    background-color: var(--red);
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.empty img {
+    padding: 1%;
+    width: 50%;
+    margin: auto;
+}
+
+.empty h5 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    word-spacing: 10%;
+    color: var(--rose-500);
+}
+
+.quantity-controls {
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 0.8rem;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: var(--red);
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2.3rem;
+    gap: 0.5em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-width:  123px;
+    max-width: 123px;
+  }
+  
+  .quantity-controls button {
+    background: none;
+    border: 0.5px solid white;
+    border-radius: 90px;
+    padding: 1px 5px; 
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .quantity-controls span.quantity {
+    padding: 8px 12px;
+    font-weight: bold;
+    color: white;
+    margin: 1px auto;
+    vertical-align: center;
+  }
+  
+  .quantity-controls button:hover {
+    background: white;
+    color: var(--red);
+    cursor: pointer;
+  }
+
+  .confirmationContainer {
+    width: 40vw;
+    max-width: 450px;
+    min-width: 50px;
+    height: max-content;
+    background-color: var(--rose-50);
+    border-radius: 5px;
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    z-index: 101;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1% 2%;
+    font-size: 16px;
+    font-family: 'Red Hat Text', sans-serif;
+  }
+
+  .checkSign {
+    width: 10%
+  }
+
+  .confirmationTitle {
+    margin: 1% 0;
+    font-size: 1.60rem;
+  }
+
+  .confirmationPhrase{
+    font-size: 0.80rem;
+    font-weight: 400;
+    color: var(--rose-300)
+  }
+
+  .confirmed-items{
+    background-color: var(--rose-100);
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    padding: 2%;
+   
+  }
+
+  .confirmed-item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1px solid var(--rose-300);
+    width: 100%;
+    padding-bottom: 2%;
+    align-items: center;
+    height: 3.5rem;
+  }
+
+  .confirmed-item > div {
+    width: 100%;
+  }
+
+  .confirmed-item-name h5 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .quantity-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+  }
+
+  .confirmed-quantity-price{
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+  .confirmed-item img {
+    max-width: 15%;
+    border-radius: 5px;
+    margin-right: 2%;
+  }
+
+  .confirmed-total {
+    margin: 1% 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .confirmed-total h5 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+
+  .confirmed-total-amount {
+    font-size: 1.10rem;
+    color: var(--rose-900);
+  }
+ 
+  .startNewOrder {
+    margin: 5% 0;
+    width: 100%;
+    background-color: var(--red);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    height: 3rem;
+    font-size: 1.05rem;
+  }
+
+  .confirmed-quantity {
+    color: var(--red);
+    font-weight: 600;
+
+  }
+
+  .confirmed-price-per-quantity {
+    color: var(--rose-400);
+    font-weight: 500;
+    letter-spacing: 4%;
+  }
+
+  .confirmed-price-item-total{
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--rose-900);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.6);
+    z-index: 100; 
+    display: none;
+  }
+  
+
+  @media (max-width: 700px) {
+
+    .confirmationContainer {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+
+   .product-image.desktop {
+    display: none;
+   }
+
+   .product-image.mobile {
+    display: block;
+   }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Desserts {
+        text-align: start;
+    }
+
+    .products-list {
+        display: flex;
+        flex-direction: column;
+       }
+
+    .product {
+       margin: 3% auto;
+    }   
+
+    .product-image.mobile{
+     width: 70vw;
+     border-radius: 5px;
+    }   
+
+    .cart {
+       width: 70vw; 
+       margin-left: 3%;
+    }
+  }

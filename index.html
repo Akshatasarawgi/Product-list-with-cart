@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <title>Product List with Cart</title>
+        <style>
+            .attribution { font-size: 11px; text-align: center; }
+            .attribution a { color: hsl(228, 45%, 44%); }
+          </style>
+        </head>
+        <body>
+          <main>
+         
+          <div class="Desserts">
+          <h1>Desserts</h1>
+
+          <div class="products-list">
+
+          <div class="product">
+          <figure class="image-container">
+            <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries" class="product-image desktop">
+            <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffle with Berries" class="product-image mobile">
+            <button class="add-to-cart" data-name="waffle" data-price="$6.50"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+            <div class="quantity-controls" style="display: none;">
+              <button class="decrease">−</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+          </figure>
+          <h5 class="caption"> Waffle</h5>
+          <h4>Waffle with Berries</h4>
+          <h5 class="price">$6.50</h5>
+          </div> 
+
+          <div class="product">
+          <figure class="image-container">
+            <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Crème Brûlée" class="product-image desktop">
+            <img src="./assets/images/image-creme-brulee-mobile.jpg" alt="Crème Brûlée" class="product-image mobile">
+            <button class="add-to-cart" data-name="creme-brulee" data-price="$7.00"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+            <div class="quantity-controls" style="display: none;">
+              <button class="decrease">−</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+          </figure>  
+          <h5 class="caption">Crème Brûlée</h5>
+          <h4>Vanilla Bean Crème Brûlée</h4>
+          <h5 class="price">$7.00</h5>
+          </div> 
+        
+          <div class="product">
+          <figure class="image-container">
+            <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron" class="product-image desktop">
+            <img src="./assets/images/image-macaron-mobile.jpg" alt="Macaron" class="product-image mobile">
+            <button class="add-to-cart" data-name="macaron" data-price="$8.00"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+            <div class="quantity-controls" style="display: none;">
+              <button class="decrease">−</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+          </figure>
+          <h5 class="caption"> Macaron</h5>
+          <h4>Macaron Mix of Five</h4>
+          <h5 class="price">$8.00</h5>
+          </div>
+
+          <div class="product">
+          <figure class="image-container">
+            <img src="./assets/images/image-tiramisu-desktop.jpg" alt="Tiramisu" class="product-image desktop">
+            <img src="./assets/images/image-tiramisu-mobile.jpg" alt="Tiramisu" class="product-image mobile">
+            <button class="add-to-cart" data-name="tiramisu" data-price="$5.50"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+            <div class="quantity-controls" style="display: none;">
+              <button class="decrease">−</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+          </figure>  
+          <h5 class="caption">Tiramisu</h5>
+          <h4>Classic Tiramisu</h4>
+          <h5 class="price">$5.50</h5>
+          </div>
+
+          <div class="product">
+          <figure class="image-container">
+            <img src="./assets/images/image-baklava-desktop.jpg" alt="Baklava" class="product-image desktop">
+            <img src="./assets/images/image-baklava-mobile.jpg" alt="Baklava" class="product-image mobile">
+            <button class="add-to-cart" data-name="baklava" data-price="$4.00"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+            <div class="quantity-controls" style="display: none;">
+              <button class="decrease">−</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+          </figure>
+          <h5 class="caption">Baklava</h5>
+          <h4>Pistachio Baklava</h4>
+          <h5 class="price">$4.00</h5>
+          </div>
+        
+          <div class="product">
+          <figure class="image-container">
+            <img src="./assets/images/image-meringue-desktop.jpg" alt="Pie" class="product-image desktop">
+            <img src="./assets/images/image-meringue-mobile.jpg" alt="Pie" class="product-image mobile">
+            <button class="add-to-cart" data-name="meringue" data-price="$5.00"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+            <div class="quantity-controls" style="display: none;">
+              <button class="decrease">−</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+          </figure>
+          <h5 class="caption">Pie</h5>
+          <h4>Lemon Meringue Pie</h4>
+          <h5 class="price">$5.00</h5>
+          </div>
+
+          <div class="product">
+            <figure class="image-container">
+              <img src="./assets/images/image-cake-desktop.jpg" alt="Cake" class="product-image desktop">
+              <img src="./assets/images/image-cake-mobile.jpg" alt="Cake" class="product-image mobile">
+              <button class="add-to-cart" data-name="cake" data-price="$4.50"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+              <div class="quantity-controls" style="display: none;">
+                <button class="decrease">−</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+              </div>
+            </figure>
+            <h5 class="caption">Cake</h5>
+            <h4>Red Velvet Cake</h4>
+            <h5 class="price">$4.50</h5>
+          </div>
+        
+          <div class="product">
+            <figure class="image-container">
+              <img src="./assets/images/image-brownie-desktop.jpg" alt="Brownie" class="product-image desktop">
+              <img src="./assets/images/image-brownie-mobile.jpg" alt="Brownie" class="product-image mobile">
+              <button class="add-to-cart" data-name="brownie" data-price="$4.50"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+              <div class="quantity-controls" style="display: none;">
+                <button class="decrease">−</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+              </div>
+            </figure>
+            <h5 class="caption">Brownie</h5>
+            <h4>Salted Caramel Brownie</h4>
+            <h5 class="price">$4.50</h5>
+          </div>
+        
+          <div class="product">
+            <figure class="image-container">
+              <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="Panna Cotta" class="product-image desktop">
+              <img src="./assets/images/image-panna-cotta-mobile.jpg" alt="Panna Cotta" class="product-image mobile">
+              <button class="add-to-cart" data-name="panna-cotta" data-price="$6.50"><img src="./assets/images/icon-add-to-cart.svg">Add to cart</button>
+              <div class="quantity-controls" style="display: none;">
+                <button class="decrease">−</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+              </div>
+            </figure>
+            <h5 class="caption">Panna Cotta</h5>
+            <h4>Vanilla Panna Cotta</h4>
+            <h5 class="price">$6.50</h5>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="cart">
+        <h2 class="cart-heading">Your Cart (<span class="total-quantity">0</span>)</h2>
+        
+        <div class="emptyCartContainer">
+          <img src="./assets/images/illustration-empty-cart.svg">
+          <h5>Your added items will appear here</h5>
+        </div>
+  
+    <div class="cart-orders">  
+
+      <div class="item-added"></div>
+
+          <div class="order-total">
+            <h5>Order total</h5>
+            <h3 class="total-amount"></h3>
+          </div> 
+
+      <div class="cart-footer">
+        <img src="./assets/images/icon-carbon-neutral.svg">This is a<span> carbon-neutral </span>order.</img>
+      </div>
+
+      <div>
+        <button class="confirm-order-btn">Confirm Order</button>
+      </div>
+    </div>  
+</div>
+
+  
+  <div class="confirmationContainer">
+    <img class="checkSign" src="./assets/images/icon-order-confirmed.svg" alt="order confirmed check">
+    <h2 class="confirmationTitle">Order Confirmed</h2>
+    <h5 class="confirmationPhrase">We hope you enjoy your food!</h5>
+    
+    <div class="confirmed-items">
+      <div class="confirmed-total">
+        <h5>Order total</h5>
+        <h3 class="confirmed-total-amount"></h3>
+        </div>
+      </div>
+    
+      <div>
+        <button class="startNewOrder">Start New Order</button>
+      </div>
+  </div>
+
+    </main>
+    <div class="overlay"></div>
+        <footer>
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+            Coded by <a href="#">Akshata Sarawgi</a>.
+          </div>
+        </footer> 
+        <script src="script.js"></script>  
+    </body>
+</html>
