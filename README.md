@@ -10,9 +10,3 @@ The add to cart button changes once the particular item is added to the cart and
 
 Designed this responsive multi-device page using JavaScript , HTML, and styled using CSS. 
 
-![alt text](Product-List-Cart.png)
-
-
-# Product-list-with-cart
-# Product-list-with-cart
-# Product-list-with-cart
