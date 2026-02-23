@@ -1,4 +1,4 @@
-#Product list with cart - JavaScript Project
+# Product list with cart
 
 ## Table of Contents
 - [Overview](#overview)
