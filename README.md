@@ -8,6 +8,7 @@
 
 ## Overview  
 -This is a product list page with add to cart functionality.
+
 -Products can be added to the cart and removed from the cart. 
 -The quantity of each product can be changed using the + or - on the buttons. 
 -The page displays a confirmation pop up once items are added to the cart and 'Confirm order' is clicked. 
